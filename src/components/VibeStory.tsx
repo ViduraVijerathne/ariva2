@@ -5,11 +5,12 @@ type Vibe=Destination["region"];
 const vibes:Vibe[]=["Highlands","Heritage","Wildlife","Coast"];
 const photos:Record<string,string>={
 "Ella":"https://images.unsplash.com/photo-1704797389230-100a9bbb5b73?auto=format&fit=crop&w=1800&q=82",
+"Tissamaharama & Yala":"https://images.unsplash.com/photo-1773745953874-6a6ecd0703b1?auto=format&fit=crop&w=1800&q=82",
 };
 const vibeImages:Record<Vibe,string>={
 Highlands:photos.Ella,
 Heritage:"https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80",
-Wildlife:"https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1600&q=80",
+Wildlife:photos["Tissamaharama & Yala"],
 Coast:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
 };
 type Props={chosenLocations:string[];onToggleLocation:(name:string)=>void;onOpenPlanner:()=>void};
